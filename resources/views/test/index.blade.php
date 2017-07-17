@@ -1,6 +1,10 @@
 
 @extends('layouts.master')
 
+@section('title')
+   <title>Test Page</title>
+@endsection
+
 @section('content')
 
     <h1>This is My Test Page</h1>

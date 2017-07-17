@@ -9,15 +9,10 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Theme Template for Bootstrap</title>
+    @yield('title')
 
-    <!-- Styles -->
-    <link href="/css/app.css" rel="stylesheet">
-    <style>
-      body{
-        padding-top: 65px;
-      } 
-    </style>
+    @include('layouts.css')
+    @yield('css')
 </head>
 
 <body role="document">
@@ -64,7 +59,9 @@
 
 </div> <!-- /container -->
 
-<script src="/js/app.js"></script>
+@include('layouts.scripts')
+@yield('scripts')
+
 
 </body>
 </html>
